@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Rest House Restaurant Irumbuzhi | Best Restaurant in Malappuram</title>
+  <meta name="description" content="Rest House Restaurant, Irumbuzhi — Kerala, Arabic, Chinese, Indian and seafood restaurant in Malappuram since 2019. Party hall & catering services. Call +91 97447 77703." />
+  <meta name="theme-color" content="#141210" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rest House Restaurant Irumbuzhi | Best Restaurant in Malappuram" />
+  <meta property="og:description" content="Rest House Restaurant, Irumbuzhi — Kerala, Arabic, Chinese, Indian and seafood restaurant in Malappuram since 2019. Party hall & catering services. Call +91 97447 77703." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            background: '#171615',
+            foreground: '#f5f3ef',
+            charcoal: '#232220',
+            card: '#232220',
+            'card-foreground': '#f5f3ef',
+            primary: '#d4af37',
+            'primary-foreground': '#171615',
+            secondary: '#2c2a27',
+            'secondary-foreground': '#f5f3ef',
+            muted: '#2c2a27',
+            'muted-foreground': '#a6a29a',
+            accent: '#2e2a22',
+            'accent-foreground': '#ecdca5',
+            border: 'rgba(212, 175, 55, 0.18)',
+            input: 'rgba(212, 175, 55, 0.25)',
+            ring: '#d4af37',
+            gold: '#d4af37',
+            'gold-soft': '#e5c97a',
+            cream: '#f7f4ed',
+            'cream-foreground': '#242220',
+            whatsapp: '#25d366',
+            'whatsapp-foreground': '#ffffff',
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Jost"', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Rest House Restaurant & Caterers",
+    "slogan": "A Taste of Excellence Since 2019",
+    "foundingDate": "2019",
+    "telephone": "+919744777703",
+    "servesCuisine": ["Seafood", "Kerala", "Arabic", "Chinese", "Indian", "Multi-Cuisine"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Irumbuzhi",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN",
+      "streetAddress": "Ayisha Complex, Near Jalaliya Juma Masjid, Irumbuzhi, Malappuram",
+      "postalCode": "676509"
+    },
+    "hasMap": "https://maps.app.goo.gl/Dh58w4XjBepvpEWa9",
+    "sameAs": ["https://www.instagram.com/resthouse_restaurant"]
+  }
+  </script>
+</head>
+<body class="bg-background text-foreground font-sans antialiased">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Rest House Restaurant & Caterers home">
+        <img src="assets/rh-logo.png" alt="Rest House Restaurant & Caterers" class="h-11 w-auto shrink-0" />
+      </a>
+      <nav class="hidden lg:flex items-center gap-7" aria-label="Main">
+        <a href="index.html" class="nav-link text-sm tracking-wide active">Home</a>
+        <a href="about.html" class="nav-link text-sm tracking-wide">About Us</a>
+        <a href="menu.html" class="nav-link text-sm tracking-wide">Menu</a>
+        <a href="party-hall.html" class="nav-link text-sm tracking-wide">Party Hall</a>
+        <a href="catering.html" class="nav-link text-sm tracking-wide">Catering</a>
+        <a href="gallery.html" class="nav-link text-sm tracking-wide">Gallery</a>
+        <a href="contact.html" class="nav-link text-sm tracking-wide">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/919744777703?text=Hello%20Rest%20House%20Restaurant%20%26%20Caterers!%20I%20would%20like%20to%20know%20more%20about%20your%20food%20menu%20and%20place%20an%20order." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us" class="hidden sm:grid h-10 w-10 place-items-center rounded-full bg-whatsapp text-whatsapp-foreground transition hover:brightness-110">
+          <i data-lucide="message-circle" class="h-5 w-5"></i>
+        </a>
+        <a href="tel:+919744777703" aria-label="Call now" class="inline-flex items-center gap-2 rounded-full bg-gold-gradient px-4 py-2.5 text-sm font-medium text-primary-foreground shadow-gold">
+          <i data-lucide="phone" class="h-4 w-4"></i> <span class="hidden sm:inline">Call Now</span>
+        </a>
+        <button id="mobile-menu-toggle" class="lg:hidden grid h-10 w-10 place-items-center rounded-full border border-border text-foreground" aria-label="Open menu" aria-expanded="false">
+          <i id="menu-icon" data-lucide="menu" class="h-5 w-5"></i>
+          <i id="close-icon" data-lucide="x" class="h-5 w-5 hidden"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Nav Drawer -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="menu.html" class="mobile-nav-link">Menu</a>
+      <a href="party-hall.html" class="mobile-nav-link">Party Hall</a>
+      <a href="catering.html" class="mobile-nav-link">Catering</a>
+      <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <p class="mt-8 text-sm text-muted-foreground">Ayisha Complex, Near Jalaliya Juma Masjid, Irumbuzhi, Malappuram, Kerala 676509</p>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative flex min-h-[100svh] items-center overflow-hidden">
+      <img src="assets/hero.jpg" alt="A feast of biryani, al faham, fish pollichathu and prawns masala" width="1920" height="1088" class="absolute inset-0 h-full w-full object-cover animate-slow-zoom" fetchpriority="high" />
+      <div class="absolute inset-0 bg-hero-overlay"></div>
+      <div class="relative mx-auto w-full max-w-6xl px-5 pt-24 pb-16 text-center">
+        <p class="eyebrow animate-reveal">Irumbuzhi · Malappuram · Kerala</p>
+        <h1 class="mt-6 text-5xl font-semibold leading-[0.95] tracking-[0.06em] sm:text-7xl md:text-8xl animate-reveal" style="animation-delay: 120ms;">
+          REST HOUSE<span class="block text-gold-gradient text-3xl tracking-[0.12em] sm:text-5xl md:text-6xl mt-3">Restaurant &amp; Caterers</span>
+        </h1>
+        <p class="mt-6 font-display text-2xl italic text-gold-soft md:text-3xl animate-reveal" style="animation-delay: 240ms;">"A Taste of Excellence Since 2019"</p>
+        <p class="mt-6 text-lg tracking-wide text-foreground animate-reveal" style="animation-delay: 320ms;">Authentic Flavours. Exceptional Dining.</p>
+        <p class="mx-auto mt-3 max-w-xl text-muted-foreground animate-reveal" style="animation-delay: 400ms;">
+          Discover delicious Kerala cuisine, Arabic specialties, Chinese dishes, Indian favourites and seafood delights.
+        </p>
+        <div class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row animate-reveal" style="animation-delay: 500ms;">
+          <a href="menu.html" class="btn-gold">Explore Our Menu</a>
+          <a href="tel:+919744777703" class="btn-outline"><i data-lucide="phone" class="h-4 w-4"></i> Call Now</a>
+          <a href="https://wa.me/919744777703?text=Hello%20Rest%20House%20Restaurant%20%26%20Caterers!%20I%20would%20like%20to%20know%20more%20about%20your%20food%20menu%20and%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><i data-lucide="message-circle" class="h-4 w-4"></i> WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-24">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
+        <div class="reveal relative">
+          <img src="assets/interior.jpg" alt="Rest House Restaurant dining area" loading="lazy" width="1536" height="1024" class="aspect-[4/5] w-full rounded-2xl object-cover shadow-card lg:aspect-[4/5]" />
+          <div class="absolute -bottom-6 -right-2 rounded-xl bg-gold-gradient px-6 py-5 text-primary-foreground shadow-gold md:-right-6">
+            <p class="font-display text-4xl font-semibold leading-none">2019</p>
+            <p class="mt-1 text-[0.65rem] uppercase tracking-[0.3em]">Established</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Our Story</p>
+          <h2 class="mt-3 text-4xl md:text-5xl font-semibold">Serving Happiness Since 2019.</h2>
+          <div class="mt-5 h-px w-20 bg-gold-gradient"></div>
+          <p class="mt-6 leading-relaxed text-muted-foreground">
+            From delicious seafood and traditional Kerala dishes to aromatic biryanis and grilled Arabic delicacies, we offer something special for every food lover — plus a party hall and professional catering for your celebrations.
+          </p>
+          <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <div class="rounded-xl border border-border bg-card p-4">
+              <i data-lucide="calendar-heart" class="h-5 w-5 text-gold"></i>
+              <p class="mt-3 text-sm font-medium">Established 2019</p>
+            </div>
+            <div class="rounded-xl border border-border bg-card p-4">
+              <i data-lucide="utensils-crossed" class="h-5 w-5 text-gold"></i>
+              <p class="mt-3 text-sm font-medium">Multi-Cuisine</p>
+            </div>
+            <div class="rounded-xl border border-border bg-card p-4">
+              <i data-lucide="fish" class="h-5 w-5 text-gold"></i>
+              <p class="mt-3 text-sm font-medium">Seafood Specialties</p>
+            </div>
+            <div class="rounded-xl border border-border bg-card p-4">
+              <i data-lucide="party-popper" class="h-5 w-5 text-gold"></i>
+              <p class="mt-3 text-sm font-medium">Party Hall</p>
+            </div>
+            <div class="rounded-xl border border-border bg-card p-4">
+              <i data-lucide="chef-hat" class="h-5 w-5 text-gold"></i>
+              <p class="mt-3 text-sm font-medium">Catering Services</p>
+            </div>
+            <div class="rounded-xl border border-border bg-card p-4">
+              <i data-lucide="heart-handshake" class="h-5 w-5 text-gold"></i>
+              <p class="mt-3 text-sm font-medium">Quality Hospitality</p>
+            </div>
+          </div>
+          <a href="about.html" class="btn-outline mt-8">Read Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Specialties Section -->
+    <section class="bg-cream py-24 text-cream-foreground">
+      <div class="mx-auto max-w-7xl px-5">
+        <div class="reveal mb-12 text-center mx-auto max-w-2xl">
+          <p class="eyebrow">Chef's Selection</p>
+          <h2 class="mt-3 text-4xl md:text-5xl font-semibold text-cream-foreground">Our Signature Specialties</h2>
+          <div class="mt-5 h-px w-20 bg-gold-gradient mx-auto"></div>
+          <p class="mt-5 text-base leading-relaxed text-cream-foreground/70">
+            Dishes our guests come back for — from Malabar biryanis to charcoal-grilled Arabian favourites.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 md:gap-6">
+          <!-- 1. Chicken Biryani -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/biryani.jpg" alt="Chicken Biryani" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Malabar</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Chicken Biryani</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 2. Fish Biryani -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/biryani.jpg" alt="Fish Biryani" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Seafood</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Fish Biryani</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 3. Prawns Biryani -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/biryani.jpg" alt="Prawns Biryani" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Seafood</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Prawns Biryani</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 4. Mandi Rice -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/arabic.jpg" alt="Mandi Rice" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Arabian</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Mandi Rice</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 5. Al Faham -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/arabic.jpg" alt="Al Faham" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Arabian</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Al Faham</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 6. Peri Peri Chicken -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/arabic.jpg" alt="Peri Peri Chicken" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Arabian</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Peri Peri Chicken</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 7. Tandoori Chicken -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/tandoor.jpg" alt="Tandoori Chicken" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Tandoor</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Tandoori Chicken</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 8. Fish Pollichathu -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/seafood.jpg" alt="Fish Pollichathu" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Kerala</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Fish Pollichathu</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 9. Prawns Masala -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/seafood.jpg" alt="Prawns Masala" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Kerala</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Prawns Masala</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 10. Malabar Chicken Curry -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/kerala.jpg" alt="Malabar Chicken Curry" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Kerala</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Malabar Chicken Curry</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 11. Beef Dry Fry -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/kerala.jpg" alt="Beef Dry Fry" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">Kerala</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Beef Dry Fry</h3>
+              </div>
+            </article>
+          </div>
+          <!-- 12. Rest House Special Salad -->
+          <div class="reveal">
+            <article class="group relative aspect-[4/5] overflow-hidden rounded-xl shadow-card">
+              <img src="assets/tandoor.jpg" alt="Rest House Special Salad" loading="lazy" width="1024" height="1024" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-hero-overlay opacity-90"></div>
+              <div class="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gold">House Special</p>
+                <h3 class="mt-1 text-xl md:text-2xl font-semibold text-foreground">Rest House Special Salad</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <a href="menu.html" class="btn-dark">Explore Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Party Hall & Catering Banner Section -->
+    <section class="grid md:grid-cols-2">
+      <!-- Party Hall Banner -->
+      <div class="group relative flex min-h-[460px] items-end overflow-hidden">
+        <img src="assets/party-hall.jpg" alt="Celebrate Your Special Moments" loading="lazy" class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+        <div class="absolute inset-0 bg-hero-overlay"></div>
+        <div class="reveal relative p-8 md:p-12">
+          <p class="eyebrow">Party Hall</p>
+          <h2 class="mt-3 text-4xl font-semibold text-foreground">Celebrate Your Special Moments</h2>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="party-hall.html" class="btn-outline">Learn More</a>
+            <a href="https://wa.me/919744777703?text=Hello%20Rest%20House%20Restaurant%20%26%20Caterers!%20I%20would%20like%20to%20enquire%20about%20your%20party%20hall%20facilities." target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+              <i data-lucide="message-circle" class="h-4 w-4"></i> Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Catering Banner -->
+      <div class="group relative flex min-h-[460px] items-end overflow-hidden">
+        <img src="assets/catering.jpg" alt="Rest House Catering Services" loading="lazy" class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+        <div class="absolute inset-0 bg-hero-overlay"></div>
+        <div class="reveal relative p-8 md:p-12">
+          <p class="eyebrow">Catering</p>
+          <h2 class="mt-3 text-4xl font-semibold text-foreground">Rest House Catering Services</h2>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="catering.html" class="btn-outline">Learn More</a>
+            <a href="https://wa.me/919744777703?text=Hello%20Rest%20House%20Restaurant%20%26%20Caterers!%20I%20am%20interested%20in%20your%20catering%20services.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+              <i data-lucide="message-circle" class="h-4 w-4"></i> Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews CTA Section -->
+    <section class="bg-charcoal py-20">
+      <div class="reveal mx-auto max-w-3xl px-5 text-center">
+        <div class="flex justify-center gap-1 text-gold" aria-hidden="true">
+          <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+          <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+          <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+          <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+          <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+        </div>
+        <h2 class="mt-5 text-4xl md:text-5xl font-semibold">What Our Guests Say</h2>
+        <p class="mt-4 text-muted-foreground">Read genuine reviews from our guests on Google — and share your own experience with us.</p>
+        <a href="https://maps.app.goo.gl/Dh58w4XjBepvpEWa9" target="_blank" rel="noopener noreferrer" class="btn-gold mt-8">Read Google Reviews</a>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-5">
+        <div class="reveal mb-12 text-center mx-auto max-w-2xl">
+          <p class="eyebrow">Find Us</p>
+          <h2 class="mt-3 text-4xl md:text-5xl font-semibold text-foreground">Visit Rest House</h2>
+          <div class="mt-5 h-px w-20 bg-gold-gradient mx-auto"></div>
+          <p class="mt-5 text-base leading-relaxed text-muted-foreground">
+            Ayisha Complex, Near Jalaliya Juma Masjid, Irumbuzhi, Malappuram, Kerala 676509
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="overflow-hidden rounded-2xl border border-border shadow-card">
+            <iframe
+              title="Rest House Restaurant location on Google Maps"
+              src="https://www.google.com/maps?q=Rest%20House%20Restaurant%20%26%20Caterers%2C%20Ayisha%20Complex%2C%20Irumbuzhi%2C%20Malappuram%2C%20Kerala%20676509&amp;output=embed"
+              class="h-[380px] w-full md:h-[460px] border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="mt-6 flex flex-wrap justify-center gap-3">
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rest%20House%20Restaurant%20%26%20Caterers%2C%20Ayisha%20Complex%2C%20Irumbuzhi%2C%20Malappuram%2C%20Kerala%20676509" target="_blank" rel="noopener noreferrer" class="btn-gold">
+              <i data-lucide="navigation" class="h-4 w-4"></i> Get Directions
+            </a>
+            <a href="https://maps.app.goo.gl/Dh58w4XjBepvpEWa9" target="_blank" rel="noopener noreferrer" class="btn-outline">
+              <i data-lucide="external-link" class="h-4 w-4"></i> Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Block Section -->
+    <section class="py-24">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="reveal mb-12 text-center mx-auto max-w-2xl">
+          <p class="eyebrow">Get in Touch</p>
+          <h2 class="mt-3 text-4xl md:text-5xl font-semibold text-foreground">Contact Us</h2>
+          <div class="mt-5 h-px w-20 bg-gold-gradient mx-auto"></div>
+          <p class="mt-5 text-base leading-relaxed text-muted-foreground">
+            Call us for orders and table enquiries, or message us on WhatsApp anytime.
+          </p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <!-- Phone Card -->
+          <div class="reveal">
+            <a href="tel:+919744777703" class="group block h-full rounded-2xl border border-border bg-card p-8 transition hover:-translate-y-1 hover:border-gold/60">
+              <i data-lucide="phone" class="h-7 w-7 text-gold"></i>
+              <p class="eyebrow mt-6">Phone</p>
+              <p class="mt-2 font-display text-xl break-words text-foreground group-hover:text-gold">+91 97447 77703</p>
+            </a>
+          </div>
+          <!-- WhatsApp Card -->
+          <div class="reveal">
+            <a href="https://wa.me/919744777703?text=Hello%20Rest%20House%20Restaurant%20%26%20Caterers!%20I%20would%20like%20to%20know%20more%20about%20your%20food%20menu%20and%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="group block h-full rounded-2xl border border-border bg-card p-8 transition hover:-translate-y-1 hover:border-gold/60">
+              <i data-lucide="message-circle" class="h-7 w-7 text-gold"></i>
+              <p class="eyebrow mt-6">WhatsApp</p>
+              <p class="mt-2 font-display text-xl break-words text-foreground group-hover:text-gold">+91 97447 77703</p>
+            </a>
+          </div>
+          <!-- Location Card -->
+          <div class="reveal">
+            <a href="https://maps.app.goo.gl/Dh58w4XjBepvpEWa9" target="_blank" rel="noopener noreferrer" class="group block h-full rounded-2xl border border-border bg-card p-8 transition hover:-translate-y-1 hover:border-gold/60">
+              <i data-lucide="map-pin" class="h-7 w-7 text-gold"></i>
+              <p class="eyebrow mt-6">Location</p>
+              <p class="mt-2 font-display text-xl break-words text-foreground group-hover:text-gold">Ayisha Complex, Near Jalaliya Juma Masjid, Irumbuzhi, Malappuram, Kerala 676509</p>
+            </a>
+          </div>
+          <!-- Instagram Card -->
+          <div class="reveal">
+            <a href="https://www.instagram.com/resthouse_restaurant" target="_blank" rel="noopener noreferrer" class="group block h-full rounded-2xl border border-border bg-card p-8 transition hover:-translate-y-1 hover:border-gold/60">
+              <i data-lucide="instagram" class="h-7 w-7 text-gold"></i>
+              <p class="eyebrow mt-6">Instagram</p>
+              <p class="mt-2 font-display text-xl break-words text-foreground group-hover:text-gold">@resthouse_restaurant</p>
+            </a>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-wrap justify-center gap-3">
+          <a href="tel:+919744777703" class="btn-gold"><i data-lucide="phone" class="h-4 w-4"></i> Call Now</a>
+          <a href="https://wa.me/919744777703?text=Hello%20Rest%20House%20Restaurant%20%26%20Caterers!%20I%20would%20like%20to%20know%20more%20about%20your%20food%20menu%20and%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><i data-lucide="message-circle" class="h-4 w-4"></i> WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-border bg-charcoal pb-24 md:pb-0">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/rh-logo.png" alt="Rest House Restaurant & Caterers" class="h-11 w-auto shrink-0" />
+        </a>
+        <p class="mt-5 text-sm leading-relaxed text-muted-foreground">
+          Kerala, Arabic, Chinese, Indian and seafood specialties in Irumbuzhi, Malappuram — with a party hall and catering for your celebrations.
+        </p>
+        <p class="mt-4 font-display text-lg italic text-gold-soft">"A Taste of Excellence Since 2019"</p>
+      </div>
+      <div>
+        <h3 class="eyebrow mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="text-foreground/80 hover:text-gold">Home</a></li>
+          <li><a href="about.html" class="text-foreground/80 hover:text-gold">About Us</a></li>
+          <li><a href="menu.html" class="text-foreground/80 hover:text-gold">Menu</a></li>
+          <li><a href="party-hall.html" class="text-foreground/80 hover:text-gold">Party Hall</a></li>
+          <li><a href="catering.html" class="text-foreground/80 hover:text-gold">Catering</a></li>
+          <li><a href="gallery.html" class="text-foreground/80 hover:text-gold">Gallery</a></li>
+          <li><a href="contact.html" class="text-foreground/80 hover:text-gold">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="eyebrow mb-4">Menu</h3>
+        <ul class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+          <li><a href="menu.html#tandoor" class="text-foreground/80 hover:text-gold">Tandoor Items</a></li>
+          <li><a href="menu.html#rice" class="text-foreground/80 hover:text-gold">Rice & Biryani</a></li>
+          <li><a href="menu.html#soups" class="text-foreground/80 hover:text-gold">Soups</a></li>
+          <li><a href="menu.html#salads" class="text-foreground/80 hover:text-gold">Salads</a></li>
+          <li><a href="menu.html#starters" class="text-foreground/80 hover:text-gold">Starters</a></li>
+          <li><a href="menu.html#south-indian" class="text-foreground/80 hover:text-gold">South Indian</a></li>
+          <li><a href="menu.html#chinese" class="text-foreground/80 hover:text-gold">Chinese</a></li>
+          <li><a href="menu.html#arabian" class="text-foreground/80 hover:text-gold">Arabian</a></li>
+          <li><a href="menu.html#north-indian" class="text-foreground/80 hover:text-gold">North Indian</a></li>
+          <li><a href="menu.html#breads" class="text-foreground/80 hover:text-gold">Breads</a></li>
+          <li><a href="menu.html#juices" class="text-foreground/80 hover:text-gold">Juices & Beverages</a></li>
+          <li><a href="menu.html#tea-coffee" class="text-foreground/80 hover:text-gold">Tea & Coffee</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="eyebrow mb-4">Visit & Contact</h3>
+        <ul class="space-y-3 text-sm text-foreground/80">
+          <li><a href="tel:+919744777703" class="flex items-center gap-2 hover:text-gold"><i data-lucide="phone" class="h-4 w-4 text-gold"></i> +91 97447 77703</a></li>
+          <li><a href="https://wa.me/919744777703?text=Hello%20Rest%20House%20Restaurant%20%26%20Caterers!%20I%20would%20like%20to%20know%20more%20about%20your%20food%20menu%20and%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-gold"><i data-lucide="message-circle" class="h-4 w-4 text-gold"></i> WhatsApp: +91 97447 77703</a></li>
+          <li><a href="https://maps.app.goo.gl/Dh58w4XjBepvpEWa9" target="_blank" rel="noopener noreferrer" class="flex items-start gap-2 hover:text-gold"><i data-lucide="map-pin" class="mt-0.5 h-4 w-4 text-gold"></i> Ayisha Complex, Near Jalaliya Juma Masjid, Irumbuzhi, Malappuram, Kerala 676509</a></li>
+          <li><a href="https://www.instagram.com/resthouse_restaurant" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-gold"><i data-lucide="instagram" class="h-4 w-4 text-gold"></i> @resthouse_restaurant</a></li>
+          <li class="pt-2"><a href="party-hall.html" class="hover:text-gold">Party Hall</a> · <a href="catering.html" class="hover:text-gold">Catering Services</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-border py-6 text-center text-xs tracking-wider text-muted-foreground">
+      © 2026 Rest House Restaurant & Caterers. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Desktop Floating Action Buttons -->
+  <div class="desktop-floating">
+    <a href="https://wa.me/919744777703?text=Hello%20Rest%20House%20Restaurant%20%26%20Caterers!%20I%20would%20like%20to%20know%20more%20about%20your%20food%20menu%20and%20place%20an%20order." target="_blank" rel="noopener noreferrer" aria-label="Order on WhatsApp" class="floating-circle-btn bg-whatsapp text-whatsapp-foreground shadow-card">
+      <i data-lucide="message-circle" class="h-6 w-6"></i>
+    </a>
+    <a href="tel:+919744777703" aria-label="Call now" class="floating-circle-btn bg-gold-gradient text-primary-foreground shadow-gold">
+      <i data-lucide="phone" class="h-6 w-6"></i>
+    </a>
+  </div>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:+919744777703" class="mobile-bottom-btn text-gold" aria-label="Call now">
+      <i data-lucide="phone" class="h-4 w-4"></i> CALL NOW
+    </a>
+    <a href="https://wa.me/919744777703?text=Hello%20Rest%20House%20Restaurant%20%26%20Caterers!%20I%20would%20like%20to%20know%20more%20about%20your%20food%20menu%20and%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="mobile-bottom-btn bg-whatsapp text-whatsapp-foreground" aria-label="WhatsApp">
+      <i data-lucide="message-circle" class="h-4 w-4"></i> WHATSAPP
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

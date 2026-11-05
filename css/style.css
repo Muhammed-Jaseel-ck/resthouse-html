@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --radius: 0.5rem;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Jost", system-ui, -apple-system, sans-serif;
+
+  --background: #171615;
+  --foreground: #f5f3ef;
+  --charcoal: #232220;
+  --card: #232220;
+  --card-foreground: #f5f3ef;
+  --primary: #d4af37;
+  --primary-foreground: #171615;
+  --secondary: #2c2a27;
+  --secondary-foreground: #f5f3ef;
+  --muted: #2c2a27;
+  --muted-foreground: #a6a29a;
+  --accent: #2e2a22;
+  --accent-foreground: #ecdca5;
+  --border: rgba(212, 175, 55, 0.18);
+  --input: rgba(212, 175, 55, 0.25);
+  --gold: #d4af37;
+  --gold-soft: #e5c97a;
+  --cream: #f7f4ed;
+  --cream-foreground: #242220;
+  --whatsapp: #25d366;
+  --whatsapp-foreground: #ffffff;
+
+  --gradient-gold: linear-gradient(135deg, #e8c975 0%, #b88628 100%);
+  --gradient-hero: linear-gradient(180deg, rgba(20, 19, 18, 0.55) 0%, rgba(20, 19, 18, 0.70) 60%, rgba(23, 22, 21, 1) 100%);
+  --shadow-gold: 0 12px 40px -12px rgba(212, 175, 55, 0.45);
+  --shadow-card: 0 20px 50px -20px rgba(0, 0, 0, 0.75);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utilities */
+.text-gold-gradient {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.bg-gold-gradient {
+  background: var(--gradient-gold);
+}
+
+.bg-hero-overlay {
+  background: var(--gradient-hero);
+}
+
+.shadow-gold {
+  box-shadow: var(--shadow-gold);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gold);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Animations */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slow-zoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animate-reveal {
+  animation: reveal-up 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 8s ease-out both;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-reveal, .animate-slow-zoom {
+    animation: none;
+  }
+}
+
+/* Button Component Styles */
+.btn-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  background: var(--gradient-gold);
+  color: var(--primary-foreground);
+  box-shadow: var(--shadow-gold);
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  color: var(--gold-soft);
+  background: transparent;
+}
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--primary-foreground);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  background: var(--whatsapp);
+  color: var(--whatsapp-foreground);
+}
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  background: var(--charcoal);
+  color: var(--cream);
+}
+.btn-dark:hover {
+  background: var(--background);
+}
+
+/* Header Styles */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.4s ease;
+  padding: 1.25rem 0;
+}
+
+.site-header.scrolled {
+  background: rgba(23, 22, 21, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 0;
+}
+
+/* Nav Link */
+.nav-link {
+  font-size: 0.875rem;
+  letter-spacing: 0.025em;
+  color: rgba(245, 243, 239, 0.8);
+  transition: color 0.2s ease;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--gold);
+}
+
+/* Mobile Nav Drawer */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(23, 22, 21, 0.98);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 49;
+  overflow-y: auto;
+  padding: 1.5rem 1.5rem 6rem;
+}
+.mobile-nav.open {
+  display: block;
+}
+.mobile-nav-link {
+  display: block;
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  color: var(--foreground);
+}
+.mobile-nav-link.active {
+  color: var(--gold);
+}
+
+/* Floating Actions */
+.desktop-floating {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 40;
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .desktop-floating {
+    display: flex;
+  }
+}
+.floating-circle-btn {
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  transition: transform 0.2s ease;
+}
+.floating-circle-btn:hover {
+  transform: scale(1.1);
+}
+
+.mobile-bottom-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--border);
+  background: rgba(23, 22, 21, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+@media (min-width: 768px) {
+  .mobile-bottom-bar {
+    display: none;
+  }
+}
+.mobile-bottom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+/* Lightbox Modal */
+.gallery-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(23, 22, 21, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-modal.open {
+  display: flex;
+}
+.gallery-modal img {
+  max-height: 85vh;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  object-fit: contain;
+}
