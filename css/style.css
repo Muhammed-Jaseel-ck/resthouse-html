@@ -271,7 +271,26 @@ button {
   right: 0;
   z-index: 50;
   transition: all 0.4s ease;
-  padding: 1.25rem 0;
+  padding: 0.5rem 0;
+}
+
+.site-header > .mx-auto {
+  width: calc(100% - 2.5rem);
+  max-width: 1600px;
+}
+
+.site-header > .mx-auto > a img {
+  height: 3rem;
+}
+
+.site-header > .mx-auto > div > a[href*="wa.me"] {
+  width: 3rem;
+  height: 3rem;
+}
+
+.site-header > .mx-auto > div > a[href^="tel:"] {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .site-header.scrolled {
@@ -279,7 +298,23 @@ button {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: 0.75rem 0;
+  padding: 0.375rem 0;
+}
+
+@media (min-width: 1024px) {
+  .site-header > .mx-auto {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .site-header > .mx-auto > nav {
+    justify-self: center;
+    gap: 4rem;
+  }
+
+  .site-header > .mx-auto > div {
+    justify-self: end;
+  }
 }
 
 /* Nav Link */
